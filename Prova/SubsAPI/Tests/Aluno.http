@@ -1,0 +1,10 @@
+@urlBase = https://localhost:7181/alunos
+
+### Cadastrar
+POST {{urlBase}}/cadastrar
+Content-Type: application/json
+
+{
+    "Nome" : "Junior",
+    "DataNascimento" : "02/06/2000"
+}

@@ -1,0 +1,26 @@
+@urlBase = https://localhost:7181/IMC 
+
+### Cadastrar
+POST {{urlBase}}/cadastrar
+Content-Type: application/json
+
+{
+    "Altura" : 1.75,
+    "Peso" : 80.2,
+    "AlunoId" : 3
+}
+
+### Listar
+GET {{urlBase}}/listar
+
+### Buscar por ID
+GET {{urlBase}}/buscar/3
+
+### Alterar
+PUT {{urlBase}}/alterar/3
+Content-Type: application/json
+
+{
+    "Altura" : 0.0,
+    "Peso" : 0.0,
+}
