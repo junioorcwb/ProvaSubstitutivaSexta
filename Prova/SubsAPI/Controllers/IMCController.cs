@@ -56,7 +56,7 @@ public class IMCController : ControllerBase {
     [HttpGet("listar")]
     public IActionResult ListarIMCs(){
 
-        List<IMC> IMCs = _banco.IMCs.ToList(); 
+        List<IMC> IMCs = _banco.IMCs.Include(a => a.Aluno).ToList();
 
         return Ok(IMCs);
     }
