@@ -7,6 +7,7 @@ export class IMC {
     imcValor! : number
     classificacao! : string
     grauObesidade! : number
+    criadoEm! : string
     alunoId! : number
     aluno! : Aluno
 

@@ -23,7 +23,6 @@ export class AppComponent {
       .subscribe({
         next: (imcs) => {
           this.IMCs = imcs
-          console.log(this.IMCs)
         }
       })
   }
